@@ -27,9 +27,6 @@ public class LocationController {
         StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/6300000/tourDataService/tourDataListJson"); /*URL*/
         urlBuilder.append("?" + URLEncoder.encode("ServiceKey","UTF-8") + "=ZyXbs3ggoxjvBgNnPZIbqucXxkimzEhCbTUf2TCX6PoRp%2BTOPYloYNtCYjVBaZzDEm8tpcfCZJW6RVoIRejKpg%3D%3D"); /*Service Key*/
         urlBuilder.append("&" + URLEncoder.encode("dcode","UTF-8") + "=" + URLEncoder.encode("", "UTF-8")); /*서비스분류코드표관광자원분류탭참조*/
-        //urlBuilder.append("&" + URLEncoder.encode("searchCondition","UTF-8") + "=" + URLEncoder.encode("", "UTF-8")); /*(1:관광자원명 , 2:소개)*/
-        //urlBuilder.append("&" + URLEncoder.encode("searchKeyword","UTF-8") + "=" + URLEncoder.encode("", "UTF-8")); /**/
-        //urlBuilder.append("&" + URLEncoder.encode("pageUnit","UTF-8") + "=" + URLEncoder.encode("", "UTF-8")); /**/
         URL url = new URL(urlBuilder.toString());
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
