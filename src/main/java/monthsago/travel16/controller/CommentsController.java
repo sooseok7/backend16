@@ -28,7 +28,7 @@ public class CommentsController {
     }
 
     @GetMapping("/getCommentsById/{no}")
-    public List<Comments> getCommentByBoardNo(@PathVariable Integer no) {
+    public List<Comments> getCommentsByQnaNo(@PathVariable Integer no) {
         return commentsService.findCommentsByQnaNo(no);
     }
 
