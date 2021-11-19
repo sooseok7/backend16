@@ -31,7 +31,7 @@ public class QnaController {
         return qnaService.createQna(qna);
     }
 
-    //get qna detail
+    //get qna detail//성환 일해라
     @GetMapping("/qna/{num}")
     public Optional<Qna> getQnaByNum(@PathVariable Integer num) {
         return qnaService.getQna(num);
