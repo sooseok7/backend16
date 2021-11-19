@@ -14,11 +14,11 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class User {
     @Id
-    @Column(name = "id")
-    private String id;
+    @Column(name = "username")
+    private String username;
 
-    @Column(name = "pw")
-    private String pw;
+    @Column(name = "password")
+    private String password;
 
     @Column(name = "role")
     private String role;
